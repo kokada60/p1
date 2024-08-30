@@ -6,5 +6,20 @@ pipeline {
                 sh "echo 'Hello Worlds!!!'"
             }
         }
+        stage("Building...") {
+            steps {
+                sh "echo 'Building'"
+            }
+        }
+        stage("Test") {
+            steps {
+                sh "echo 'Hi Im testing'"
+            }
+        }
+        stage("Deploy") {
+            steps {
+                echo "Im deploying..."
+            }
+        }
     }
 }
